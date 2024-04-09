@@ -1,0 +1,122 @@
+/* tags */
+
+button {
+
+  /* position */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* centers the element */
+
+  /* block model */
+  display: inline-block;
+  padding: 6% 17% 6% 17%;
+
+  /* decoration */
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 10px;
+
+  /* other */
+  cursor: pointer;
+}
+
+ul {
+
+  /* block model */
+  margin: 0;
+  padding: 0;
+  
+  /* decoration */
+  list-style-type:none; /* remove dots */
+}
+
+li {
+
+  /* block model */
+  float:left;
+  margin:5px;
+
+  /* other */
+  cursor:pointer;
+}
+
+img {
+
+  /* block model */
+  display: none;
+  width: 0;
+  height: 50px;
+
+  /* animation */
+  transition: width 0.3s;
+}
+
+a {
+
+  /* block model */
+  display: block; /* to make the link stretch over the entire block */
+
+  /* decoration */
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* classes */
+
+.block { /* for game block, block with slider and win block */
+
+  /* position */
+  position: relative;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%); /* centers the element */
+
+  /* block model */
+  display: inline-block; /* for the block to width depending on the content */
+  padding: 40px;
+
+  /* decoration */
+  box-shadow: 0px 2px 20px 1px #999999;
+  border-radius: 10px;
+}
+
+.img-div {
+
+  /* position */
+  position: relative;
+  top: 0;
+
+  /* block model */
+  height: 50px;
+  width: 50px;
+
+  /* decoration */
+  background-image: url("../IMG/bg.jpg");
+  border: 1px solid;
+
+  /* animation */
+  transition: width 0.3s, top 1s;
+}
+
+.place-holder {
+    width: 50px;
+    height: 50px;
+}
+
+/* ids */
+
+#win {
+  display: none;
+}
+
+
+/* other */
+
+::-webkit-scrollbar {
+  display: none; /* *I'm not sure how correct this is* */
+}
